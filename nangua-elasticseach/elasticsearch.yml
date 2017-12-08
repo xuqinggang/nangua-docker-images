@@ -1,0 +1,17 @@
+node.name: "node"                                                                                                                                                      
+cluster.name: "es-nangua"                                                                                                                                          
+
+xpack.security.enabled: false
+                                                                                                                                                                       
+network.host: 0.0.0.0                                                                                                                                                  
+
+# 设置ping其他节点时的超时时间，网络比较慢时可将该值设大：
+discovery.zen.ping_timeout: 3s
+
+http.port: 9201
+transport.tcp.port: 9301
+
+# 设置新节点被启动时能够发现的主节点列表                
+
+discovery.zen.ping.unicast.hosts: ["10.23.64.19:9301"]                                                                                                                 
+discovery.zen.minimum_master_nodes: 2
