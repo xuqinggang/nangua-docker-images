@@ -5,3 +5,6 @@
 
 ### nangua-elasticsearch
 南瓜es集群的镜像
+
+### nangua-front-base
+南瓜前端node环境基础镜像
